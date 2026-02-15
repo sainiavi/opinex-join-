@@ -174,15 +174,129 @@ export const EarlyaccessLanding = (): JSX.Element => {
         <div className="pointer-events-none absolute -top-40 -left-32 h-80 w-80 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,214,102,0.9),rgba(255,214,102,0.2)_45%,rgba(255,255,255,0)_70%)] blur-2xl animate-breathe" />
         <div className="pointer-events-none absolute -bottom-48 -right-32 h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle_at_70%_70%,rgba(255,174,0,0.65),rgba(255,174,0,0.12)_50%,rgba(255,255,255,0)_75%)] blur-3xl animate-float-slow" />
         <div className="pointer-events-none absolute top-24 right-10 h-24 w-24 rounded-full border border-yellow-300/60 bg-white/10 backdrop-blur-sm animate-slow-spin" />
-        <div
-          className="absolute bg-cover bg-center opacity-100 z-0 left-4 right-4 sm:left-8 sm:right-8 lg:left-16 lg:right-16 rounded-2xl animate-hero-zoom"
-          style={{
-            backgroundImage: "url(/frame-2087327136.png)",
-            backgroundAttachment: "fixed",
-            top: "32px",
-            bottom: "32px",
-          }}
-        />
+        {/* Hero frame (clip everything inside the rounded frame) */}
+        <div className="absolute left-4 right-4 sm:left-8 sm:right-8 lg:left-16 lg:right-16 top-8 bottom-8 rounded-2xl overflow-hidden z-0">
+          <div
+            className="hero-bg absolute inset-0 bg-cover bg-center opacity-100 animate-hero-zoom"
+            style={{
+              backgroundImage: "url(/frame-2087327136.png)",
+            }}
+          />
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div className="h-[520px] w-[520px] sm:h-[600px] sm:w-[600px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95),rgba(255,255,255,0.55)_35%,rgba(255,255,255,0)_70%)] blur-3xl" />
+          </div>
+          <div className="pointer-events-none absolute inset-0 z-[1] flex items-center justify-center">
+            <div className="orbit-wrap">
+              <div className="orbit-scene">
+              <div
+                className="orbit-layer orbit-outer"
+                style={
+                  {
+                    "--orbit-duration": "38s",
+                    "--arc-length": "220",
+                    "--arc-gap": "2500",
+                    "--arc-offset": "380",
+                  } as CSSProperties
+                }
+              >
+                <div className="orbit-rotator">
+                  <svg className="orbit-svg" viewBox="0 0 1000 1000" aria-hidden="true">
+                    <circle className="orbit-circle" cx="500" cy="500" r="445" />
+                    <circle className="orbit-arc" cx="500" cy="500" r="445" />
+                  </svg>
+                  <div
+                    className="orbit-label"
+                    style={{ "--orbit-angle": "300deg", "--orbit-tilt": "0deg" } as CSSProperties}
+                  >
+                    <span className="orbit-label-inner">
+                      <span className="orbit-pill">
+                        <span className="orbit-pill-icon">
+                          <img src="/iconify-icon-1.svg" alt="" />
+                        </span>
+                        <span>Bitcoin</span>
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="orbit-label"
+                    style={{ "--orbit-angle": "240deg", "--orbit-tilt": "0deg" } as CSSProperties}
+                  >
+                    <span className="orbit-label-inner">
+                      <span className="orbit-pill">
+                        <span className="orbit-pill-icon orbit-pill-icon--cricket">
+                          <img src="/icon-cricket.svg" alt="" />
+                        </span>
+                        <span>Cricket</span>
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="orbit-label"
+                    style={{ "--orbit-angle": "60deg", "--orbit-tilt": "0deg" } as CSSProperties}
+                  >
+                    <span className="orbit-label-inner">
+                      <span className="orbit-pill">
+                        <span className="orbit-pill-icon orbit-pill-icon--blue">
+                          <img src="/iconify-icon-3.svg" alt="" />
+                        </span>
+                        <span>Ethereum</span>
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="orbit-label"
+                    style={{ "--orbit-angle": "120deg", "--orbit-tilt": "0deg" } as CSSProperties}
+                  >
+                    <span className="orbit-label-inner">
+                      <span className="orbit-pill">
+                        <span className="orbit-pill-icon orbit-pill-icon--green">
+                          <img src="/icon-forex.svg" alt="" />
+                        </span>
+                        <span>Forex</span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="orbit-layer orbit-mid orbit-reverse"
+                style={
+                  {
+                    "--orbit-duration": "30s",
+                    "--arc-length": "170",
+                    "--arc-gap": "2000",
+                    "--arc-offset": "140",
+                  } as CSSProperties
+                }
+              >
+                <div className="orbit-rotator">
+                  <svg className="orbit-svg" viewBox="0 0 800 800" aria-hidden="true">
+                    <circle className="orbit-circle" cx="400" cy="400" r="320" />
+                    <circle className="orbit-arc" cx="400" cy="400" r="320" />
+                  </svg>
+                </div>
+              </div>
+
+              <div
+                className="orbit-layer orbit-inner"
+                style={{ "--orbit-duration": "22s" } as CSSProperties}
+              >
+                <div className="orbit-rotator">
+                  <svg className="orbit-svg" viewBox="0 0 600 600" aria-hidden="true">
+                    <circle
+                      className="orbit-circle orbit-circle--soft"
+                      cx="300"
+                      cy="300"
+                      r="230"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="flex flex-col items-center gap-8 sm:gap-12 lg:gap-16 py-8 sm:py-12">
@@ -196,14 +310,8 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 />
               </div>
 
-              <Badge className="px-3 py-1 bg-white rounded-full border-0 shadow-md animate-float hover:bg-yellow-300/70 transition-colors duration-300">
-                <span className="[font-family:'Sk-Modernist-Bold',Helvetica] text-gray-900 text-xs sm:text-sm text-center font-bold tracking-[0]">
-                  Yes or No. Make It Count.
-                </span>
-              </Badge>
-
               <h1
-                className="[font-family:'Sk-Modernist-Regular',Helvetica] font-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center tracking-[0] leading-tight animate-fade-up px-2"
+                className="[font-family:'Sk-Modernist-Regular',Helvetica] font-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center tracking-[0] leading-tight animate-fade-up px-2"
                 style={{ "--animation-delay": "0.15s" } as CSSProperties}
               >
                 <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#111,#ffb300,#111)] bg-[length:200%_200%] animate-gradient-shift">
@@ -242,25 +350,30 @@ export const EarlyaccessLanding = (): JSX.Element => {
 
             {/* Email input and Join Waitlist button */}
             <form
-              className="w-full flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mt-2 animate-fade-up"
+              className="w-full flex items-center justify-center mt-3 animate-fade-up"
               style={{ "--animation-delay": "0.45s" } as CSSProperties}
               onSubmit={handleSubmit}
             >
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                className="w-full sm:w-72 max-w-[320px] sm:max-w-none mx-auto sm:mx-0 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-transform duration-300 focus:scale-[1.01]"
-                required
-              />
-              <Button
-                type="submit"
-                disabled={status === "loading"}
-                className="w-full sm:w-auto max-w-[320px] sm:max-w-none mx-auto sm:mx-0 px-6 py-3 rounded-full bg-[linear-gradient(90deg,rgba(255,213,79,1)_0%,rgba(255,179,0,1)_100%)] bg-[length:200%_200%] animate-gradient-shift border-0 hover:opacity-90 font-bold text-gray-900 transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
-              >
-                {status === "loading" ? "Submitting..." : "Join Waitlist"}
-              </Button>
+              <div className="w-[92%] sm:w-[60%] max-w-[540px] h-auto sm:h-[100px] py-4 sm:py-0 bg-white/90 backdrop-blur-xl rounded-[32px] sm:rounded-[100px] shadow-[0_14px_34px_rgba(15,23,42,0.12)] sm:shadow-[0_20px_48px_rgba(15,23,42,0.1)] border border-[#eef1f6] px-4 sm:px-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-[10px]">
+                <div className="flex items-center gap-3 bg-white rounded-full border border-[#e5e7eb] px-4 sm:px-5 h-[54px] sm:h-[52px] w-full sm:w-[344px] shadow-none sm:shadow-[inset_0_0_0_1px_rgba(226,232,240,0.5)]">
+                  <img src="/icon-postcard.svg" alt="" className="h-4 w-4 opacity-70" />
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                    className="border-0 bg-transparent px-0 py-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-sm sm:text-base placeholder:text-[#98a2b3]"
+                    required
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  disabled={status === "loading"}
+                  className="w-full sm:w-auto h-[54px] sm:h-[52px] px-8 rounded-full bg-[#f7b51c] hover:bg-[#f4a300] text-gray-900 font-semibold text-sm sm:text-base shadow-[0_8px_16px_rgba(247,181,28,0.35)] transition-transform duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {status === "loading" ? "Submitting..." : "Get Early Access"}
+                </Button>
+              </div>
             </form>
             {message ? (
               <p
@@ -271,6 +384,25 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 {message}
               </p>
             ) : null}
+            <div className="flex items-center justify-center gap-4 mt-2 sm:-mt-2 scale-[0.75]">
+              <div className="flex items-center justify-center">
+                {userAvatars.map((avatar, index) => (
+                  <Avatar
+                    key={index}
+                    className={`w-8 h-8 sm:w-9 sm:h-9 border-2 border-white ${index > 0 ? "-ml-2" : ""}`}
+                  >
+                    <AvatarImage src={avatar} alt={`User ${index + 1}`} />
+                    <AvatarFallback>U{index + 1}</AvatarFallback>
+                  </Avatar>
+                ))}
+              </div>
+              <div className="flex items-center gap-2">
+                <img className="h-4" alt="Stars" src="/frame-2087327058.svg" />
+                <p className="[font-family:'Sk-Modernist-Regular',Helvetica] font-normal text-[#444444] text-sm sm:text-base tracking-[0] leading-[20px]">
+                  3,244 Traders Joined the Waitlist
+                </p>
+              </div>
+            </div>
             </div>
 
             {/* <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
