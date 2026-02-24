@@ -314,21 +314,19 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 className="[font-family:'Sk-Modernist-Regular',Helvetica] font-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center tracking-[0] leading-tight animate-fade-up px-2"
                 style={{ "--animation-delay": "0.15s" } as CSSProperties}
               >
-                <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#111,#ffb300,#111)] bg-[length:200%_200%] animate-gradient-shift">
-                  New era of Predictions
-                  <br />
-                  Driven by Community Opinion
-                </span>
+	                <span className="font-semibold text-transparent bg-clip-text bg-[linear-gradient(90deg,#111,#ffb300,#111)] bg-[length:200%_200%] animate-gradient-shift">
+	                  Trade. Win. Earn.
+	                </span>
               </h1>
 
               <p
                 className="max-w-2xl font-text-medium-normal text-[#444444] text-sm sm:text-base lg:text-md text-center px-4 animate-fade-up"
                 style={{ "--animation-delay": "0.3s" } as CSSProperties}
               >
-                A prediction marketplace where hosts create curated pools across
-                Crypto, Cricket, and Forex and the community takes positions on
-                real-world outcomes.
-              </p>
+	                A prediction marketplace where hosts create curated pools across
+	                Crypto, Cricket, and Forex and the community takes positions on
+	                real-world outcomes.
+	              </p>
             </div>
 {/* 
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
