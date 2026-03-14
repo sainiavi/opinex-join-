@@ -128,6 +128,45 @@ const userAvatars = [
   "/ellipse-4139.svg",
 ];
 
+const socialLinks = [
+  {
+    name: "Instagram",
+    href: "https://instagram.com/Opinex.io",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7">
+        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2.2" />
+        <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" strokeWidth="2.2" />
+        <circle cx="17.2" cy="6.8" r="1.3" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    name: "X",
+    href: "https://x.com/Opinex_io",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7">
+        <path
+          d="M4 4h3.8l4.3 5.9L17.2 4H20l-6.6 7.6L20 20h-3.8l-4.7-6.4L6 20H4.2l6.7-7.8L4 4Z"
+          fill="currentColor"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Telegram",
+    href: "https://t.me/opinexio",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-7 w-7">
+        <circle cx="12" cy="12" r="10" fill="currentColor" />
+        <path
+          d="M17.3 7.8 6.8 11.9c-.7.3-.7 1.2.1 1.5l2.6.8.9 2.9c.2.7 1.1.8 1.5.2l1.5-2 2.9 2.1c.5.3 1.1 0 1.2-.6l1.4-8c.1-.6-.5-1-1.1-.8Z"
+          fill="#fff"
+        />
+      </svg>
+    ),
+  },
+];
+
 export const EarlyaccessLanding = (): JSX.Element => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
@@ -400,6 +439,20 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   3,244 Traders Joined the Waitlist
                 </p>
               </div>
+            </div>
+            <div className="flex items-center justify-center gap-5 sm:gap-8 mt-6 sm:mt-8 pb-2">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={link.name}
+                  className="text-black transition-transform duration-200 hover:scale-110"
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
             </div>
 
