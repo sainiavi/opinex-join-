@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scaleY(0.60);
+  transform: scaleY(1.000);
 }
 
 .hero-bg {
@@ -227,7 +227,7 @@
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
-  transform: scaleY(1.666);
+  transform: scaleY(1.000);
 }
 
 .orbit-pill-icon {

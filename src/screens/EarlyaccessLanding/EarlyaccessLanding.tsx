@@ -246,25 +246,27 @@ export const EarlyaccessLanding = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="relative z-10 pt-1 sm:pt-2">
+            <div className="relative z-20 pt-1 sm:pt-2">
               <div className="px-10 sm:px-14 lg:px-16">
                 <div className="hidden h-14 items-center justify-between gap-10 lg:flex">
-                  <nav className="flex items-center gap-10 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
-                    <a className="hover:text-black" href="#top">
-                      Home
-                    </a>
-                    <a className="hover:text-black" href="#trending-markets">
-                      Markets
-                    </a>
-                    <a className="hover:text-black" href="#how-it-works">
-                      How it works
-                    </a>
-                    <a className="hover:text-black" href="#testimonials">
-                      Blogs
-                    </a>
-                  </nav>
+                  <div className="flex h-10 items-center justify-center rounded-full bg-white/15 backdrop-blur-md px-4 shadow-sm border border-white/20">
+                    <nav className="flex items-center gap-10 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
+                      <a className="hover:text-black" href="#top">
+                        Home
+                      </a>
+                      <a className="hover:text-black" href="#trending-markets">
+                        Markets
+                      </a>
+                      <a className="hover:text-black" href="#how-it-works">
+                        How it works
+                      </a>
+                      <a className="hover:text-black" href="#testimonials">
+                        Blogs
+                      </a>
+                    </nav>
+                  </div>
 
-                  <div className="flex translate-x-9 items-center gap-8 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
+                  <div className="flex translate-x-9 items-center gap-8 rounded-full bg-white/15 backdrop-blur-md px-4 py-1.5 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica] shadow-sm border border-white/20">
                     <a className="hover:text-black" href="#why-opinex">
                       About Us
                     </a>
@@ -285,7 +287,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between lg:hidden">
+                <div className="flex items-center justify-between rounded-full bg-white/30 backdrop-blur-md px-4 py-2 lg:hidden shadow-sm border border-white/20">
                   <img
                     alt="Opinex"
                     className="h-6 w-auto"
@@ -305,7 +307,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 </div>
               </div>
 
-              <div className="pointer-events-none absolute left-1/2 top-0 hidden -translate-x-1/2 lg:block">
+              <div className="pointer-events-none absolute left-1/2 top-0 z-30 hidden -translate-x-1/2 lg:block">
                 <div className="rounded-b-[28px] bg-white px-16 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
                   <img alt="Opinex" className="h-8 w-auto" src="/content.svg" />
                 </div>
@@ -340,9 +342,8 @@ export const EarlyaccessLanding = (): JSX.Element => {
                       <img
                         alt=""
                         aria-hidden="true"
-                        className={`h-8 w-8 rounded-full border-2 border-white object-cover ${
-                          idx === 0 ? "" : "-ml-2"
-                        }`}
+                        className={`h-8 w-8 rounded-full border-2 border-white object-cover ${idx === 0 ? "" : "-ml-2"
+                          }`}
                         key={src}
                         src={src}
                       />
@@ -522,37 +523,33 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     const number = String(idx + 1).padStart(2, "0");
                     return (
                       <button
-                        className={`w-full rounded-2xl border text-left transition-colors ${
-                          isActive
-                            ? "border-black/10 bg-white shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
-                            : "border-transparent bg-white/45 hover:bg-white/55"
-                        }`}
+                        className={`w-full rounded-2xl border text-left transition-colors ${isActive
+                          ? "border-black/10 bg-white shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
+                          : "border-transparent bg-white/45 hover:bg-white/55"
+                          }`}
                         key={step.title}
                         onClick={() => setActiveHowStep(idx)}
                         type="button"
                       >
                         <div className="flex items-center gap-5 px-6 py-6 sm:px-7">
                           <div
-                            className={`flex h-16 w-16 flex-none items-center justify-center rounded-full text-2xl font-medium [font-family:'Sk-Modernist-Regular',Helvetica] ${
-                              isActive
-                                ? "bg-[#FFC045] text-black"
-                                : "bg-black/5 text-black/25"
-                            }`}
+                            className={`flex h-16 w-16 flex-none items-center justify-center rounded-full text-2xl font-medium [font-family:'Sk-Modernist-Regular',Helvetica] ${isActive
+                              ? "bg-[#FFC045] text-black"
+                              : "bg-black/5 text-black/25"
+                              }`}
                           >
                             {number}
                           </div>
                           <div>
                             <div
-                              className={`text-3xl font-medium tracking-tight [font-family:'Sk-Modernist-Regular',Helvetica] ${
-                                isActive ? "text-black" : "text-black/25"
-                              }`}
+                              className={`text-3xl font-medium tracking-tight [font-family:'Sk-Modernist-Regular',Helvetica] ${isActive ? "text-black" : "text-black/25"
+                                }`}
                             >
                               {step.title}
                             </div>
                             <div
-                              className={`mt-2 text-sm ${
-                                isActive ? "text-black/60" : "text-black/25"
-                              }`}
+                              className={`mt-2 text-sm ${isActive ? "text-black/60" : "text-black/25"
+                                }`}
                             >
                               {step.body}
                             </div>
@@ -601,22 +598,20 @@ export const EarlyaccessLanding = (): JSX.Element => {
               <div className="mt-8 flex justify-center">
                 <div className="inline-flex rounded-full bg-white/65 p-1 shadow-sm">
                   <button
-                    className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${
-                      whyTab === "opinex"
-                        ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
-                        : "text-black/40 hover:text-black/60"
-                    }`}
+                    className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${whyTab === "opinex"
+                      ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
+                      : "text-black/40 hover:text-black/60"
+                      }`}
                     onClick={() => setWhyTab("opinex")}
                     type="button"
                   >
                     OPINEX
                   </button>
                   <button
-                    className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${
-                      whyTab === "traditional"
-                        ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
-                        : "text-black/40 hover:text-black/60"
-                    }`}
+                    className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${whyTab === "traditional"
+                      ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
+                      : "text-black/40 hover:text-black/60"
+                      }`}
                     onClick={() => setWhyTab("traditional")}
                     type="button"
                   >
@@ -653,20 +648,20 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 </div>
 
                 <div className="relative mx-auto w-full max-w-[520px]">
-                    <div className="relative mx-auto h-[520px] w-full max-w-[420px] overflow-hidden">
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        className="pointer-events-none absolute left-1/2 top-40 w-[400px] -translate-x-1/2"
-                        src="/iphone-16-pro---black-titanium---portrait.png"
-                      />
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        className="pointer-events-none absolute bottom-0 left-1/2 w-[380px] -translate-x-1/2"
-                        src="/landing-v1/why-person.png"
-                      />
-                    </div>
+                  <div className="relative mx-auto h-[520px] w-full max-w-[420px] overflow-hidden">
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute left-1/2 top-40 w-[400px] -translate-x-1/2"
+                      src="/iphone-16-pro---black-titanium---portrait.png"
+                    />
+                    <img
+                      alt=""
+                      aria-hidden="true"
+                      className="pointer-events-none absolute bottom-0 left-1/2 w-[380px] -translate-x-1/2"
+                      src="/landing-v1/why-person.png"
+                    />
+                  </div>
 
                   {/* Decorative Hand-drawn Arrows */}
                   <div className="pointer-events-none absolute left-[-20px] top-[45%] hidden lg:block">
@@ -778,11 +773,10 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     ] as const
                   ).map((tab) => (
                     <button
-                      className={`rounded-full px-7 py-3 text-sm font-semibold transition-all ${
-                        globalTab === tab.key
-                          ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black shadow-[0_10px_22px_rgba(255,179,0,0.3)]"
-                          : "text-black/35 hover:text-black/55"
-                      }`}
+                      className={`rounded-full px-7 py-3 text-sm font-semibold transition-all ${globalTab === tab.key
+                        ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black shadow-[0_10px_22px_rgba(255,179,0,0.3)]"
+                        : "text-black/35 hover:text-black/55"
+                        }`}
                       key={tab.key}
                       onClick={() => setGlobalTab(tab.key)}
                       type="button"
@@ -981,24 +975,24 @@ export const EarlyaccessLanding = (): JSX.Element => {
 
                 {/* Central Action Card */}
                 <div className="relative flex flex-col items-center justify-center rounded-[20px] border border-[#FFB300]/20 bg-white p-8 shadow-[0_15px_40px_rgba(0,0,0,0.06)]">
-                   <div className="text-center font-['DM_Sans'] text-[18px] font-bold text-black">
-                     Incredibly useful product
-                   </div>
-                   <div className="mt-4 text-center font-['DM_Sans'] text-[15px] leading-[1.6] text-[#444444]/60">
-                     Stellar's user–friendly dashboards have simplified our digital strategy management.
-                   </div>
-                   
-                   <div className="mt-8">
-                     <Button className="h-[52px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-10 text-[16px] font-bold text-black shadow-[0_10px_25px_rgba(255,179,0,0.3)] transition-transform hover:scale-105 active:scale-95">
-                       Follow us on social media
-                     </Button>
-                   </div>
+                  <div className="text-center font-['DM_Sans'] text-[18px] font-bold text-black">
+                    Incredibly useful product
+                  </div>
+                  <div className="mt-4 text-center font-['DM_Sans'] text-[15px] leading-[1.6] text-[#444444]/60">
+                    Stellar's user–friendly dashboards have simplified our digital strategy management.
+                  </div>
 
-                   <div className="mt-6 flex items-center gap-3 opacity-30 grayscale">
+                  <div className="mt-8">
+                    <Button className="h-[52px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-10 text-[16px] font-bold text-black shadow-[0_10px_25px_rgba(255,179,0,0.3)] transition-transform hover:scale-105 active:scale-95">
+                      Follow us on social media
+                    </Button>
+                  </div>
+
+                  <div className="mt-6 flex items-center gap-3 opacity-30 grayscale">
                     <img alt="" className="h-8 w-8 rounded-full" src="/landing-v1/avatar-fig.png" />
                     <span className="text-[14px] font-bold text-black">@fignel_sooon</span>
                     <Twitter className="h-4 w-4 text-[#1D9BF0]" />
-                   </div>
+                  </div>
                 </div>
 
                 <div className="rounded-[20px] border border-[#E8EAF0] bg-white/40 p-8 opacity-40 grayscale">
@@ -1055,7 +1049,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                       src="/iphone.png"
                     />
                   </div>
-                  
+
                   <div className="relative pb-16 pl-4">
                     <img
                       alt=""
@@ -1244,9 +1238,8 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     <div className="mt-8 space-y-6 font-['DM_Sans'] text-[16px] text-black/60">
                       {col.links.map((link) => (
                         <a
-                          className={`block w-fit hover:text-black ${
-                            link.underline ? "underline underline-offset-8" : ""
-                          }`}
+                          className={`block w-fit hover:text-black ${link.underline ? "underline underline-offset-8" : ""
+                            }`}
                           href={link.href}
                           key={link.label}
                         >
