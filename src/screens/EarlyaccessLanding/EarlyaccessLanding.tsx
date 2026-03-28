@@ -136,14 +136,13 @@ export const EarlyaccessLanding = (): JSX.Element => {
   return (
     <div className="min-h-screen w-full bg-white font-text-medium-normal text-[#101318]">
       <main id="top" className="pb-16">
-        <section className="px-6 pb-8 pt-8 sm:px-12 sm:pb-12 sm:pt-12 lg:px-16">
+        <section className="px-6 pt-8 sm:px-12 sm:pt-12 lg:px-16">
           <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 border-t-0 bg-[#F9F8EE]">
-            <div className="pointer-events-none absolute inset-0">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(255,207,92,0.55),rgba(255,255,255,0)_56%),radial-gradient(circle_at_80%_35%,rgba(255,194,69,0.35),rgba(255,255,255,0)_58%),radial-gradient(circle_at_50%_70%,rgba(255,255,255,0.95),rgba(255,255,255,0.0)_70%)]" />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#FFE9B4]/45 via-white/55 to-white/90" />
-              <div className="absolute -top-40 -left-32 h-80 w-80 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,214,102,0.75),rgba(255,214,102,0.18)_45%,rgba(255,255,255,0)_70%)] blur-2xl" />
-              <div className="absolute -bottom-52 -right-36 h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle_at_70%_70%,rgba(255,174,0,0.45),rgba(255,174,0,0.10)_50%,rgba(255,255,255,0)_75%)] blur-3xl" />
-            </div>
+            <img
+              alt=""
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+              src="/frame-2087327136.png"
+            />
 
             <div className="pointer-events-none absolute inset-x-0 bottom-0 top-24 z-[2] hidden items-center justify-center sm:flex lg:top-28">
               <div className="orbit-wrap">
@@ -247,10 +246,10 @@ export const EarlyaccessLanding = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="relative z-10 pb-2 pt-1 sm:pb-4 sm:pt-2">
+            <div className="relative z-10 pt-1 sm:pt-2">
               <div className="px-10 sm:px-14 lg:px-16">
                 <div className="hidden h-14 items-center justify-between gap-10 lg:flex">
-                  <nav className="flex items-center gap-10 text-[15px] font-medium text-black/65">
+                  <nav className="flex items-center gap-10 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
                     <a className="hover:text-black" href="#top">
                       Home
                     </a>
@@ -265,7 +264,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     </a>
                   </nav>
 
-                  <div className="flex translate-x-9 items-center gap-8 text-[15px] font-medium text-black/65">
+                  <div className="flex translate-x-9 items-center gap-8 text-[16px] font-normal leading-[150%] tracking-[-0.02em] text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
                     <a className="hover:text-black" href="#why-opinex">
                       About Us
                     </a>
@@ -273,11 +272,11 @@ export const EarlyaccessLanding = (): JSX.Element => {
                       Contact
                     </a>
                     <div className="flex items-center gap-3">
-                      <Button className="h-9 rounded-full bg-[#FFC045] px-6 text-black hover:bg-[#f3ba2f]">
+                      <Button className="h-9 w-[97px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] p-0 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black shadow-none hover:opacity-90">
                         Sign in
                       </Button>
                       <Button
-                        className="h-9 rounded-full border border-black/10 bg-white/75 px-6 text-black hover:bg-white"
+                        className="h-9 rounded-full border border-black/10 bg-white/75 px-6 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black hover:bg-white"
                         variant="outline"
                       >
                         Download APK
@@ -293,11 +292,11 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     src="/content.svg"
                   />
                   <div className="flex items-center gap-2">
-                    <Button className="h-9 rounded-full bg-[#FFC045] px-4 text-black hover:bg-[#f3ba2f]">
+                    <Button className="h-9 w-[97px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] p-0 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black shadow-none hover:opacity-90">
                       Sign in
                     </Button>
                     <Button
-                      className="h-9 rounded-full border border-black/10 bg-white/70 px-4 text-black hover:bg-white"
+                      className="h-9 rounded-full border border-black/10 bg-white/70 px-4 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black hover:bg-white"
                       variant="outline"
                     >
                       APK
@@ -318,19 +317,18 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   <br />
                   On Real World Events
                 </h1>
-                <p className="mx-auto mt-5 max-w-[680px] text-sm leading-relaxed text-black/60 sm:text-base">
+                <p className="mx-auto mt-5 max-w-[680px] text-sm leading-relaxed text-[#444444] sm:text-base">
                   A prediction marketplace where you can predict Bitcoin moves,
                   Forex shifts and sports outcomes in transparent on-chain
                   markets.
                 </p>
 
                 <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                  <Button className="h-11 rounded-full bg-[#FFC045] px-8 text-black hover:bg-[#f3ba2f]">
+                  <Button className="h-11 rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-8 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black shadow-none hover:opacity-90">
                     Start Your Journey
                   </Button>
                   <Button
-                    className="h-11 rounded-full border border-black/10 bg-white/70 px-8 text-black hover:bg-white"
-                    variant="outline"
+                    className="h-11 rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-8 font-['DM_Sans'] text-[16px] font-semibold leading-[150%] tracking-[-0.02em] text-black shadow-none hover:opacity-90"
                   >
                     Download APK
                   </Button>
@@ -350,7 +348,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                       />
                     ))}
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-black/55">
+                  <div className="flex flex-col items-start gap-1 text-xs text-black/55">
                     <img alt="Rating" className="h-4" src="/frame-2087327058.svg" />
                     <span>3,244 Traders Joined the Waitlist</span>
                   </div>
@@ -370,14 +368,14 @@ export const EarlyaccessLanding = (): JSX.Element => {
           </div>
         </section>
 
-        <section className="-mt-2 px-6 pb-2 sm:-mt-3 sm:px-12 lg:px-16">
+        <section className="px-6 pb-2 sm:px-12 lg:px-16">
           <div className="mx-auto w-full max-w-[1440px]">
-            <div className="relative overflow-hidden rounded-2xl border border-black/5 bg-white/55 py-6 backdrop-blur">
+            <div className="relative flex h-[118.6px] items-center overflow-hidden rounded-2xl border border-black/5 bg-white/55 px-6 py-8 backdrop-blur sm:px-10 lg:px-16">
               <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white/90 to-transparent" />
               <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white/90 to-transparent" />
 
-              <div className="flex w-max items-center gap-14 pl-10 pr-10 [--duration:28s] [--gap:3.5rem] motion-reduce:animate-none animate-marquee">
-                <div className="flex w-max items-center gap-14 pr-14">
+              <div className="flex h-[54.6px] w-max items-center gap-10 pl-0 pr-0 [--duration:28s] [--gap:2.5rem] motion-reduce:animate-none animate-marquee">
+                <div className="flex w-max items-center gap-10 pr-10">
                   {partnerLogos.map((partner) => (
                     <div
                       className="flex items-center gap-3 text-lg font-semibold text-black/35"
@@ -396,7 +394,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
 
                 <div
                   aria-hidden="true"
-                  className="flex w-max items-center gap-14 pr-14"
+                  className="flex w-max items-center gap-10 pr-10"
                 >
                   {partnerLogos.map((partner) => (
                     <div
@@ -419,7 +417,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
           </div>
         </section>
 
-        <section className="mt-6 px-6 sm:mt-10 sm:px-12 lg:px-16" id="trending-markets">
+        <section className="px-6 sm:px-12 lg:px-16" id="trending-markets">
           <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10">
             <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#FFE9B4]/55 via-transparent to-transparent" />
             <img
@@ -436,15 +434,14 @@ export const EarlyaccessLanding = (): JSX.Element => {
             />
 
             <div className="relative">
-              <h2 className="text-center text-4xl font-semibold tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-5xl">
-                Trending Markets
+              <h2 className="text-center text-[64px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[52px] lg:text-[64px]">
+                Made For Everyone!
               </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-black/60 sm:text-base">
-                Explore trending markets &amp; events across Crypto, Cricket
-                &amp; Forex.
+              <p className="mx-auto mt-4 max-w-2xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
+                Explore Trending markets & events across Crypto, Cricket & Forex.
               </p>
 
-              <div className="mt-12 grid gap-6 md:grid-cols-3">
+              <div className="mt-16 grid gap-8 md:grid-cols-3">
                 {[
                   {
                     badge: "CURATED FOR",
@@ -463,27 +460,25 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   },
                 ].map((card) => (
                   <div
-                    className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
+                    className="flex flex-col overflow-hidden rounded-[16px] border border-black/5 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.06)]"
                     key={card.title}
                   >
-                    <div className="px-6 pt-6 text-center">
-                      <div className="mx-auto inline-flex items-center rounded-full bg-[#F7E7BA] px-3 py-1 text-[10px] font-semibold tracking-widest text-black/60">
+                    <div className="px-6 pb-6 pt-6 text-center">
+                      <div className="mx-auto inline-flex items-center rounded-full bg-[#FDE9B4] px-3 py-1 text-[11px] font-bold tracking-[0.05em] text-black/70">
                         {card.badge}
                       </div>
-                      <div className="mt-3 text-[28px] font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
+                      <div className="mt-4 text-[26px] font-bold tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica]">
                         {card.title}
                       </div>
                     </div>
 
-                    <div className="mt-4 px-5 pb-5">
-                      <div className="overflow-hidden rounded-xl bg-[#f4f4f4]">
-                        <img
-                          alt=""
-                          className="h-[360px] w-full object-cover object-top"
-                          loading="lazy"
-                          src={card.image}
-                        />
-                      </div>
+                    <div className="relative mt-auto overflow-hidden">
+                      <img
+                        alt=""
+                        className="h-[420px] w-full object-cover object-top"
+                        loading="lazy"
+                        src={card.image}
+                      />
                     </div>
                   </div>
                 ))}
@@ -493,7 +488,12 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16" id="how-it-works">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10 sm:py-16">
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 py-14 sm:px-10 sm:py-16">
+            <img
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/howitworks.png"
+            />
             <img
               alt=""
               aria-hidden="true"
@@ -508,12 +508,11 @@ export const EarlyaccessLanding = (): JSX.Element => {
             />
 
             <div className="relative">
-              <h2 className="text-center text-5xl font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
+              <h2 className="text-center text-[64px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[52px] lg:text-[64px]">
                 How it Works?
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-black/60 sm:text-base">
-                Opinex markets feels simpler than trading &amp; works in 4
-                simple steps
+              <p className="mx-auto mt-4 max-w-2xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
+                Opinex markets feels simpler than trading & works in 4 simple steps
               </p>
 
               <div className="mt-12 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
@@ -583,25 +582,18 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16" id="why-opinex">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10 sm:py-16">
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 pt-14 sm:px-10 sm:pt-16">
             <img
               alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute left-10 top-6 w-[260px] -rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
-            />
-            <img
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute right-10 top-8 w-[260px] rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/howitworks.png"
             />
 
             <div className="relative">
-              <h2 className="text-center text-5xl font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
+              <h2 className="text-center text-[36px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[48px] lg:text-[64px]">
                 WHY OPINEX?
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-black/60 sm:text-base">
+              <p className="mx-auto mt-4 max-w-3xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
                 What makes opinex different from traditional platforms. click the
                 button to know!
               </p>
@@ -611,7 +603,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   <button
                     className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${
                       whyTab === "opinex"
-                        ? "bg-[#FFC045] text-black"
+                        ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
                         : "text-black/40 hover:text-black/60"
                     }`}
                     onClick={() => setWhyTab("opinex")}
@@ -622,7 +614,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   <button
                     className={`rounded-full px-6 py-3 text-sm font-semibold transition-colors ${
                       whyTab === "traditional"
-                        ? "bg-[#FFC045] text-black"
+                        ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black"
                         : "text-black/40 hover:text-black/60"
                     }`}
                     onClick={() => setWhyTab("traditional")}
@@ -636,37 +628,36 @@ export const EarlyaccessLanding = (): JSX.Element => {
               <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_520px_1fr] lg:items-center">
                 <div className="space-y-14">
                   <div className="max-w-xs">
-                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm">
-                      <Flame className="h-5 w-5 text-[#FFC045]" />
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+                      <Flame className="h-6 w-6 text-[#FFB300]" />
                     </div>
-                    <div className="text-base font-semibold text-black">
+                    <div className="text-[18px] font-bold text-black">
                       Transparent markets
                     </div>
-                    <div className="mt-2 text-sm text-black/60">
+                    <div className="mt-2 font-['DM_Sans'] text-[15px] leading-relaxed text-[#444444]">
                       Real-Time Markets along with transparency.
                     </div>
                   </div>
 
                   <div className="max-w-xs">
-                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm">
-                      <Zap className="h-5 w-5 text-[#FFC045]" />
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+                      <Zap className="h-6 w-6 text-[#FFB300]" />
                     </div>
-                    <div className="text-base font-semibold text-black">
+                    <div className="text-[18px] font-bold text-black">
                       Instant USDT settlement
                     </div>
-                    <div className="mt-2 text-sm text-black/60">
+                    <div className="mt-2 font-['DM_Sans'] text-[15px] leading-relaxed text-[#444444]">
                       Instant settlements after the event ends.
                     </div>
                   </div>
                 </div>
 
                 <div className="relative mx-auto w-full max-w-[520px]">
-                  <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-white px-8 pb-0 pt-12 shadow-[0_18px_48px_rgba(0,0,0,0.06)]">
                     <div className="relative mx-auto h-[520px] w-full max-w-[420px] overflow-hidden">
                       <img
                         alt=""
                         aria-hidden="true"
-                        className="pointer-events-none absolute left-1/2 top-0 w-[420px] -translate-x-1/2"
+                        className="pointer-events-none absolute left-1/2 top-40 w-[400px] -translate-x-1/2"
                         src="/iphone-16-pro---black-titanium---portrait.png"
                       />
                       <img
@@ -676,72 +667,74 @@ export const EarlyaccessLanding = (): JSX.Element => {
                         src="/landing-v1/why-person.png"
                       />
                     </div>
+
+                  {/* Decorative Hand-drawn Arrows */}
+                  <div className="pointer-events-none absolute left-[-20px] top-[45%] hidden lg:block">
+                    <svg
+                      className="h-24 w-24 -rotate-12 text-black/80"
+                      fill="none"
+                      viewBox="0 0 100 100"
+                    >
+                      <path
+                        d="M80 20 C 60 20, 20 40, 20 80"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeWidth="3.5"
+                      />
+                      <path
+                        d="M20 80 L 10 65 M 20 80 L 35 75"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="3.5"
+                      />
+                    </svg>
                   </div>
 
-                  <svg
-                    aria-hidden="true"
-                    className="pointer-events-none absolute left-[-22px] top-[58%] hidden h-24 w-24 text-black/70 lg:block"
-                    fill="none"
-                    viewBox="0 0 100 100"
-                  >
-                    <path
-                      d="M78 70C60 76 41 71 30 57c-8-10-7-23 2-31"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeWidth="8"
-                    />
-                    <path
-                      d="M22 26l18-2-9 15"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="8"
-                    />
-                  </svg>
-
-                  <svg
-                    aria-hidden="true"
-                    className="pointer-events-none absolute right-[-22px] top-[58%] hidden h-24 w-24 text-black/70 lg:block"
-                    fill="none"
-                    viewBox="0 0 100 100"
-                  >
-                    <path
-                      d="M22 70c18 6 37 1 48-13 8-10 7-23-2-31"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeWidth="8"
-                    />
-                    <path
-                      d="M78 26l-18-2 9 15"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="8"
-                    />
-                  </svg>
+                  <div className="pointer-events-none absolute right-[-20px] top-[45%] hidden lg:block">
+                    <svg
+                      className="h-24 w-24 rotate-[195deg] text-black/80"
+                      fill="none"
+                      viewBox="0 0 100 100"
+                    >
+                      <path
+                        d="M80 20 C 60 20, 20 40, 20 80"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeWidth="3.5"
+                      />
+                      <path
+                        d="M20 80 L 10 65 M 20 80 L 35 75"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="3.5"
+                      />
+                    </svg>
+                  </div>
                 </div>
 
                 <div className="space-y-14 lg:text-right">
                   <div className="ml-auto max-w-xs">
-                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm">
-                      <PieChart className="h-5 w-5 text-[#FFC045]" />
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+                      <PieChart className="h-6 w-6 text-[#FFB300]" />
                     </div>
-                    <div className="text-base font-semibold text-black">
+                    <div className="text-[18px] font-bold text-black">
                       Top Creators Analytics
                     </div>
-                    <div className="mt-2 text-sm text-black/60">
-                      Professionals analytics shared within community.
+                    <div className="mt-2 font-['DM_Sans'] text-[15px] leading-relaxed text-[#444444]">
+                      Professionals analytics shared within Community.
                     </div>
                   </div>
 
                   <div className="ml-auto max-w-xs">
-                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white shadow-sm">
-                      <Sparkles className="h-5 w-5 text-[#FFC045]" />
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-[0_10px_25px_rgba(0,0,0,0.06)]">
+                      <Sparkles className="h-6 w-6 text-[#FFB300]" />
                     </div>
-                    <div className="text-base font-semibold text-black">
+                    <div className="text-[18px] font-bold text-black">
                       Community revenue share
                     </div>
-                    <div className="mt-2 text-sm text-black/60">
+                    <div className="mt-2 font-['DM_Sans'] text-[15px] leading-relaxed text-[#444444]">
                       Calculated on the basis of referral business volume.
                     </div>
                   </div>
@@ -752,33 +745,26 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-4 sm:mt-12" id="global-markets">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10 sm:py-16">
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 py-14 sm:px-10 sm:py-16">
             <img
               alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute left-10 top-6 w-[260px] -rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
-            />
-            <img
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute right-10 top-8 w-[260px] rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/howitworks.png"
             />
 
             <img
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute bottom-[-420px] left-1/2 w-[1400px] max-w-none -translate-x-1/2 opacity-25"
-              src="/landing-v1/globe.svg"
+              className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-[1200px] -translate-x-1/2 opacity-30"
+              src="/earth.png"
             />
 
             <div className="relative">
-              <h2 className="text-center text-5xl font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
-                Global Markets &amp; Events
+              <h2 className="text-center text-[36px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[48px] lg:text-[64px]">
+                Global Markets & Events
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-black/60 sm:text-base">
-                Checkout our Live Markets &amp; Real World Events to place
+              <p className="mx-auto mt-4 max-w-3xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
+                Checkout our Live Markets & Real World Events to place
                 predictions
               </p>
 
@@ -792,9 +778,9 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     ] as const
                   ).map((tab) => (
                     <button
-                      className={`rounded-full px-7 py-3 text-sm font-semibold transition-colors ${
+                      className={`rounded-full px-7 py-3 text-sm font-semibold transition-all ${
                         globalTab === tab.key
-                          ? "bg-[#FFC045] text-black shadow-[0_10px_22px_rgba(255,192,69,0.35)]"
+                          ? "bg-gradient-to-r from-[#FFD54F] to-[#FFB300] text-black shadow-[0_10px_22px_rgba(255,179,0,0.3)]"
                           : "text-black/35 hover:text-black/55"
                       }`}
                       key={tab.key}
@@ -807,73 +793,67 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 </div>
               </div>
 
-              <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              <div className="mt-12 grid gap-8 lg:grid-cols-3">
                 {globalMarkets[globalTab].map((market, idx) => (
                   <div
-                    className="relative rounded-2xl border border-[#FFC045]/60 bg-white px-6 pb-5 pt-6 shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
+                    className="relative rounded-[20px] border border-[#FFB300]/30 bg-white px-6 pb-6 pt-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)]"
                     key={`${globalTab}-${idx}`}
                   >
-                    <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#FFC045]/70 bg-white px-3 py-1 text-xs font-semibold text-black/70 shadow-sm">
-                      <span className="inline-flex items-center gap-1">
-                        <Clock className="h-3.5 w-3.5" />
-                        {market.timeLeft}
-                      </span>
+                    <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 flex h-8 items-center gap-1.5 rounded-full bg-[#FFB300] px-4 py-1 text-[11px] font-bold text-black shadow-sm">
+                      <Clock className="h-3.5 w-3.5" />
+                      {market.timeLeft}
                     </div>
 
                     <div className="flex gap-4">
                       <div
-                        className={`flex h-12 w-12 flex-none items-center justify-center rounded-xl ${market.color}`}
+                        className={`flex h-12 w-12 flex-none items-center justify-center rounded-xl ${market.color.replace('bg-', 'bg-opacity-20 bg-')}`}
                       >
-                        <Rocket className="h-6 w-6" />
+                        <Rocket className={`h-6 w-6 ${market.color.replace('bg-', 'text-')}`} />
                       </div>
                       <div className="min-w-0">
-                        <div className="whitespace-pre-line text-base font-semibold text-black">
+                        <div className="font-['DM_Sans'] text-[16px] font-bold leading-tight text-black">
                           {market.title}
                         </div>
-                        <div className="mt-2 text-xs text-black/45">
+                        <div className="mt-1 text-[13px] font-medium text-black/40">
                           {market.traders}
                         </div>
                       </div>
                     </div>
 
-                    <div className="mt-5 grid grid-cols-2 gap-3">
-                      <div className="rounded-xl border border-[#CFE0FF] bg-[#EAF2FF] px-4 py-3">
-                        <div className="flex items-center justify-between text-sm font-semibold text-[#1D5CFF]">
-                          <span className="inline-flex items-center gap-1">
-                            <ArrowUpRight className="h-4 w-4" />
-                            Yes
-                          </span>
-                          <span className="text-xs font-semibold">
-                            {market.yesPrice}
-                          </span>
-                        </div>
+                    <div className="mt-6 grid grid-cols-2 gap-3">
+                      <div className="flex items-center justify-between rounded-xl bg-[#EAF2FF] px-4 py-3 border border-[#EAF2FF] hover:border-[#1D5CFF]/30 transition-all cursor-pointer">
+                        <span className="flex items-center gap-1.5 text-[14px] font-bold text-[#1D5CFF]">
+                          <ArrowUpRight className="h-4 w-4" />
+                          Yes
+                        </span>
+                        <span className="text-[13px] font-bold text-[#1D5CFF]/70">
+                          {market.yesPrice}
+                        </span>
                       </div>
-                      <div className="rounded-xl border border-[#FFD0D0] bg-[#FFEFEF] px-4 py-3">
-                        <div className="flex items-center justify-between text-sm font-semibold text-[#FF4D2E]">
-                          <span className="inline-flex items-center gap-1">
-                            <ArrowDownRight className="h-4 w-4" />
-                            No
-                          </span>
-                          <span className="text-xs font-semibold">
-                            {market.noPrice}
-                          </span>
-                        </div>
+                      <div className="flex items-center justify-between rounded-xl bg-[#FFEFEF] px-4 py-3 border border-[#FFEFEF] hover:border-[#FF4D2E]/30 transition-all cursor-pointer">
+                        <span className="flex items-center gap-1.5 text-[14px] font-bold text-[#FF4D2E]">
+                          <ArrowDownRight className="h-4 w-4" />
+                          No
+                        </span>
+                        <span className="text-[13px] font-bold text-[#FF4D2E]/70">
+                          {market.noPrice}
+                        </span>
                       </div>
                     </div>
 
-                    <div className="mt-4">
-                      <div className="flex items-center justify-between text-[11px] font-semibold">
-                        <span className="text-[#00A86B]">{market.yesPct}%</span>
-                        <span className="text-[#FF4D2E]">{market.noPct}%</span>
+                    <div className="mt-6">
+                      <div className="flex items-center justify-between text-[13px] font-bold">
+                        <span className="text-[#00A86B] font-['DM_Sans']">{market.yesPct}%</span>
+                        <span className="text-[#FF4D2E] font-['DM_Sans']">{market.noPct}%</span>
                       </div>
-                      <div className="mt-2 h-2 overflow-hidden rounded-full bg-black/5">
+                      <div className="mt-2.5 h-2 overflow-hidden rounded-full bg-black/5">
                         <div className="flex h-full w-full">
                           <div
-                            className="h-full bg-[#00A86B]"
+                            className="h-full bg-[#00A86B] rounded-l-full"
                             style={{ width: `${market.yesPct}%` }}
                           />
                           <div
-                            className="h-full bg-[#FF4D2E]"
+                            className="h-full bg-[#FF4D2E] rounded-r-full"
                             style={{ width: `${market.noPct}%` }}
                           />
                         </div>
@@ -883,8 +863,8 @@ export const EarlyaccessLanding = (): JSX.Element => {
                 ))}
               </div>
 
-              <div className="mt-12 flex justify-center">
-                <Button className="h-11 rounded-full bg-[#FFC045] px-10 text-black hover:bg-[#f3ba2f]">
+              <div className="mt-16 flex justify-center">
+                <Button className="h-[52px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-12 text-[16px] font-bold text-black shadow-[0_10px_25px_rgba(255,179,0,0.3)] transition-transform hover:scale-105 active:scale-95">
                   View Markets
                 </Button>
               </div>
@@ -893,25 +873,18 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16" id="testimonials">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10 sm:py-16">
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 py-14 sm:px-10 sm:py-16">
             <img
               alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute left-10 top-6 w-[260px] -rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
-            />
-            <img
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute right-10 top-8 w-[260px] rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/howitworks.png"
             />
 
             <div className="relative">
-              <h2 className="text-center text-5xl font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
+              <h2 className="text-center text-[36px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[48px] lg:text-[64px]">
                 See What Our Circle Says!
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-black/60 sm:text-base">
+              <p className="mx-auto mt-4 max-w-3xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
                 We have always believed in Community First Approach.
               </p>
 
@@ -926,7 +899,6 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     social: (
                       <Twitter className="h-5 w-5 text-[#1D9BF0]" />
                     ),
-                    socialBg: "bg-[#EAF4FF]",
                   },
                   {
                     title: "Incredibly useful product",
@@ -937,7 +909,6 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     social: (
                       <Instagram className="h-5 w-5 text-[#E1306C]" />
                     ),
-                    socialBg: "bg-[#FFF0F7]",
                   },
                   {
                     title: "Incredibly useful product",
@@ -948,41 +919,38 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     social: (
                       <Facebook className="h-5 w-5 text-[#1877F2]" />
                     ),
-                    socialBg: "bg-[#EAF1FF]",
                   },
                 ].map((t) => (
                   <div
-                    className="rounded-2xl border border-black/10 bg-white p-7 shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
+                    className="rounded-[20px] border border-[#E8EAF0] bg-white p-8 shadow-[0_15px_40px_rgba(0,0,0,0.04)]"
                     key={t.handle}
                   >
-                    <div className="text-base font-semibold text-black">
+                    <div className="font-['DM_Sans'] text-[18px] font-bold text-black">
                       {t.title}
                     </div>
-                    <div className="mt-4 text-sm leading-relaxed text-black/60">
+                    <div className="mt-4 font-['DM_Sans'] text-[16px] leading-[1.6] text-[#444444]">
                       {t.body}
                     </div>
 
-                    <div className="mt-8 flex items-center justify-between">
+                    <div className="mt-10 flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <img
                           alt=""
                           aria-hidden="true"
-                          className="h-12 w-12 rounded-full bg-black/5 object-cover"
+                          className="h-12 w-12 rounded-full bg-[#F3F4F6] object-cover"
                           src={t.avatar}
                         />
                         <div>
-                          <div className="text-sm font-semibold text-black">
+                          <div className="font-['DM_Sans'] text-[16px] font-bold text-black">
                             {t.name}
                           </div>
-                          <div className="text-sm font-semibold text-[#FFC045]">
+                          <div className="font-['DM_Sans'] text-[14px] font-bold text-[#F3BA2F]">
                             {t.handle}
                           </div>
                         </div>
                       </div>
 
-                      <div
-                        className={`flex h-12 w-12 items-center justify-center rounded-full border border-black/10 ${t.socialBg}`}
-                      >
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#E8EAF0] bg-white shadow-sm">
                         {t.social}
                       </div>
                     </div>
@@ -991,86 +959,63 @@ export const EarlyaccessLanding = (): JSX.Element => {
               </div>
 
               <div className="mt-6 grid gap-6 lg:grid-cols-3">
-                <div className="rounded-2xl border border-black/5 bg-white/35 p-7 text-black/30">
-                  <div className="text-base font-semibold">Incredibly useful product</div>
-                  <div className="mt-4 text-sm leading-relaxed">
-                    We've gained invaluable insights and improved our SEO ranking, resulting in significant business growth
+                {/* Visual Placeholder Cards */}
+                <div className="rounded-[20px] border border-[#E8EAF0] bg-white/40 p-8 opacity-40 grayscale">
+                  <div className="font-['DM_Sans'] text-[18px] font-bold text-black">Incredibly useful product</div>
+                  <div className="mt-4 font-['DM_Sans'] text-[16px] leading-[1.6] text-[#444444]">
+                    We've gained invaluable insights and improved our SEO ranking, resulting in significant business growth.
                   </div>
-                  <div className="mt-8 flex items-center justify-between opacity-50">
+                  <div className="mt-10 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        className="h-12 w-12 rounded-full bg-black/5 object-cover"
-                        src="/landing-v1/avatar-sadie.png"
-                      />
+                      <img alt="" className="h-12 w-12 rounded-full bg-[#F3F4F6]" src="/landing-v1/avatar-amaya.png" />
                       <div>
-                        <div className="text-sm font-semibold text-black/40">
-                          Sadie Berlin
-                        </div>
-                        <div className="text-sm font-semibold text-[#FFC045]/60">
-                          @sadieberlin00
-                        </div>
+                        <div className="text-[16px] font-bold text-black">Sadie Berlin</div>
+                        <div className="text-[14px] font-bold text-[#F3BA2F]">@sadieberlin00</div>
                       </div>
                     </div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white/55">
-                      <Instagram className="h-5 w-5 text-[#E1306C]/60" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#E8EAF0] bg-white">
+                      <Instagram className="h-5 w-5 text-[#E1306C]" />
                     </div>
                   </div>
                 </div>
 
-                <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white p-7 shadow-[0_18px_48px_rgba(0,0,0,0.06)]">
-                  <div className="text-base font-semibold text-black">
-                    Incredibly useful product
-                  </div>
-                  <div className="mt-4 text-sm leading-relaxed text-black/60">
-                    Stellar's user–friendly dashboards have simplified our digital strategy management.
-                  </div>
+                {/* Central Action Card */}
+                <div className="relative flex flex-col items-center justify-center rounded-[20px] border border-[#FFB300]/20 bg-white p-8 shadow-[0_15px_40px_rgba(0,0,0,0.06)]">
+                   <div className="text-center font-['DM_Sans'] text-[18px] font-bold text-black">
+                     Incredibly useful product
+                   </div>
+                   <div className="mt-4 text-center font-['DM_Sans'] text-[15px] leading-[1.6] text-[#444444]/60">
+                     Stellar's user–friendly dashboards have simplified our digital strategy management.
+                   </div>
+                   
+                   <div className="mt-8">
+                     <Button className="h-[52px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-10 text-[16px] font-bold text-black shadow-[0_10px_25px_rgba(255,179,0,0.3)] transition-transform hover:scale-105 active:scale-95">
+                       Follow us on social media
+                     </Button>
+                   </div>
 
-                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent" />
-
-                  <div className="mt-10 flex justify-center">
-                    <Button className="h-11 rounded-full bg-[#FFC045] px-10 text-black hover:bg-[#f3ba2f]">
-                      Follow us on social media
-                    </Button>
-                  </div>
-
-                  <div className="mt-4 flex items-center justify-center gap-2 text-xs font-semibold text-black/35">
-                    <img
-                      alt=""
-                      aria-hidden="true"
-                      className="h-7 w-7 rounded-full bg-black/5 object-cover"
-                      src="/landing-v1/avatar-fig.png"
-                    />
-                    <span>@fignel_sooon</span>
-                    <Twitter className="h-4 w-4 text-[#1D9BF0]/70" />
-                  </div>
+                   <div className="mt-6 flex items-center gap-3 opacity-30 grayscale">
+                    <img alt="" className="h-8 w-8 rounded-full" src="/landing-v1/avatar-fig.png" />
+                    <span className="text-[14px] font-bold text-black">@fignel_sooon</span>
+                    <Twitter className="h-4 w-4 text-[#1D9BF0]" />
+                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-black/5 bg-white/35 p-7 text-black/30">
-                  <div className="text-base font-semibold">Incredibly useful product</div>
-                  <div className="mt-4 text-sm leading-relaxed">
+                <div className="rounded-[20px] border border-[#E8EAF0] bg-white/40 p-8 opacity-40 grayscale">
+                  <div className="font-['DM_Sans'] text-[18px] font-bold text-black">Incredibly useful product</div>
+                  <div className="mt-4 font-['DM_Sans'] text-[16px] leading-[1.6] text-[#444444]">
                     Stellar's user–friendly dashboards have simplified our digital strategy management.
                   </div>
-                  <div className="mt-8 flex items-center justify-between opacity-50">
+                  <div className="mt-10 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img
-                        alt=""
-                        aria-hidden="true"
-                        className="h-12 w-12 rounded-full bg-black/5 object-cover"
-                        src="/landing-v1/avatar-sadie.png"
-                      />
+                      <img alt="" className="h-12 w-12 rounded-full bg-[#F3F4F6]" src="/landing-v1/avatar-sadie.png" />
                       <div>
-                        <div className="text-sm font-semibold text-black/40">
-                          Sadie Berlin
-                        </div>
-                        <div className="text-sm font-semibold text-[#FFC045]/60">
-                          @sadieberlin00
-                        </div>
+                        <div className="text-[16px] font-bold text-black">Amaya Locosta</div>
+                        <div className="text-[14px] font-bold text-[#F3BA2F]">@amaylocosta</div>
                       </div>
                     </div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white/55">
-                      <Instagram className="h-5 w-5 text-[#E1306C]/60" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#E8EAF0] bg-white">
+                      <Twitter className="h-5 w-5 text-[#1D9BF0]" />
                     </div>
                   </div>
                 </div>
@@ -1080,76 +1025,82 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16" id="cta">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-[#FFC045]/70 bg-[#F9F8EE] px-6 py-12 sm:px-10 sm:py-14">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 opacity-[0.45]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)",
-                backgroundSize: "54px 54px",
-                backgroundPosition: "-1px -1px",
-              }}
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 opacity-70"
-              style={{
-                background:
-                  "radial-gradient(circle at 40% 30%, rgba(255,192,69,0.14), rgba(255,255,255,0) 55%), radial-gradient(circle at 70% 70%, rgba(0,0,0,0.06), rgba(255,255,255,0) 60%)",
-              }}
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[24px] border border-black/5 px-6 py-12 sm:px-10 sm:py-16">
+            <img
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/Background.png"
             />
 
-            <div className="relative grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-              <div className="relative overflow-hidden rounded-3xl border border-black/10 bg-[#F7E7BA]/55 p-7 text-center shadow-[0_18px_48px_rgba(0,0,0,0.06)] sm:p-9">
-                <div className="mx-auto inline-flex items-center rounded-full bg-white/65 px-3 py-1 text-[11px] font-semibold text-black/60 shadow-sm">
-                  Opinion Based Trading
+            <div className="relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              {/* Left Column Mockup Card */}
+              <div className="relative overflow-hidden rounded-[24px] border border-black/5 bg-gradient-to-br from-[#FFF8E6] to-[#FFEAB0] px-8 pb-0 pt-10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] sm:px-12">
+                <div className="relative z-10 text-center">
+                  <div className="inline-flex rounded-full bg-[#E8B100]/10 px-3 py-1 text-[16px] font-bold text-[#E8B100]">
+                    Opinion Based Trading
+                  </div>
+                  <div className="mt-4 text-[24px] font-bold leading-tight tracking-tight text-black sm:text-[42px] [font-family:'Sk-Modernist-Regular',Helvetica]">
+                    <span className="relative">
+                      Scan the QR CODE
+                      <span className="absolute -bottom-2 left-0 h-[6px] w-full rounded-full bg-[#FFB300]" />
+                    </span>
+                  </div>
                 </div>
 
-                <div className="mt-4 text-3xl font-semibold tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-4xl">
-                  <span className="relative inline-block">
-                    Scan the QR CODE
-                    <span className="absolute -bottom-1 left-0 h-[6px] w-full rounded-full bg-[#FFC045]" />
-                  </span>
-                </div>
-
-                <div className="mt-8 flex justify-center">
-                  <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-[0_18px_48px_rgba(0,0,0,0.10)]">
+                <div className="relative mt-10 grid grid-cols-[1.4fr_1fr] items-end">
+                  <div className="relative z-10 -mb-2">
                     <img
-                      alt="Download QR"
-                      className="h-[190px] w-[190px] rounded-xl"
-                      loading="lazy"
-                      src="/landing-v1/qr.png"
+                      alt="iPhone Mockup"
+                      className="w-full max-w-[320px]"
+                      src="/iphone.png"
                     />
+                  </div>
+                  
+                  <div className="relative pb-16 pl-4">
+                    <img
+                      alt=""
+                      className="absolute -left-4 -top-6 w-[70px] -rotate-[15deg] opacity-80"
+                      src="/curvearrow.png"
+                    />
+                    <div className="w-fit rounded-[24px] bg-white p-4 shadow-[0_20px_50px_rgba(0,0,0,0.12)]">
+                      <img
+                        alt="QR Code"
+                        className="h-[140px] w-[140px] rounded-xl sm:h-[160px] sm:w-[160px]"
+                        src="/landing-v1/qr.png"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
+              {/* Right Column Content */}
               <div className="px-2 sm:px-4">
-                <div className="text-sm font-semibold text-[#FFC045]">
+                <div className="font-['DM_Sans'] text-sm font-semibold tracking-wide text-[#FFB300]">
                   Opinion Based Trading!
                 </div>
-                <h2 className="mt-3 text-5xl font-semibold leading-[1.02] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
-                  Start your Journey Today!
+                <h2 className="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] lg:text-5xl  ">
+                  Start Your Journey Today!
                 </h2>
-                <p className="mt-4 max-w-xl text-sm leading-relaxed text-black/60 sm:text-base">
-                  Experience the Opinex difference and unlock the true
-                  potential.
+                <p className="mt-2 max-w-xl font-['DM_Sans'] text-[18px] font-normal leading-relaxed text-[#444444]">
+                  Experience the Opinex difference and unlock the true potential.
                 </p>
 
-                <div className="mt-8">
-                  <Button className="h-12 rounded-full bg-[#FFC045] px-10 text-base font-semibold text-black hover:bg-[#f3ba2f]">
+                <div className="mt-6">
+                  <Button className="h-[52px] rounded-full bg-gradient-to-r from-[#FFD54F] to-[#FFB300] px-12 text-[16px] font-bold text-black shadow-[0_10px_25px_rgba(255,179,0,0.3)] transition-transform hover:scale-105">
                     Download APK
                   </Button>
                 </div>
 
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
-                  {["Instant Settlements", "No Hidden Charges"].map((label) => (
-                    <div className="flex items-center gap-3 text-sm font-medium text-black/70" key={label}>
-                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFC045] text-black shadow-[0_10px_22px_rgba(255,192,69,0.35)]">
-                        <Check className="h-4 w-4" />
-                      </span>
-                      <span>{label}</span>
+                <div className="mt-10 flex flex-wrap gap-x-8 gap-y-4">
+                  {[
+                    { label: "Instant Settlements", color: "bg-[#FFB300]" },
+                    { label: "No Hidden Charges", color: "bg-[#FFB300]" },
+                  ].map((item) => (
+                    <div className="flex items-center gap-3 font-['DM_Sans'] text-[15px] font-semibold text-black/80" key={item.label}>
+                      <div className={`flex h-6 w-6 items-center justify-center rounded-full ${item.color} text-black shadow-sm`}>
+                        <Check className="h-3.5 w-3.5 stroke-[3px]" />
+                      </div>
+                      <span>{item.label}</span>
                     </div>
                   ))}
                 </div>
@@ -1159,33 +1110,26 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <section className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16" id="faq">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-14 sm:px-10 sm:py-16">
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 py-14 sm:px-10 sm:py-16">
             <img
               alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute left-10 top-6 w-[260px] -rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
-            />
-            <img
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute right-10 top-8 w-[260px] rotate-6 opacity-80"
-              src="/landing-v1/cloud.png"
+              className="absolute inset-0 h-full w-full object-cover"
+              src="/howitworks.png"
             />
 
             <img
               alt=""
               aria-hidden="true"
-              className="pointer-events-none absolute bottom-[-380px] left-1/2 w-[1280px] max-w-none -translate-x-1/2 opacity-25"
-              src="/landing-v1/globe.svg"
+              className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-[1280px] -translate-x-1/2 opacity-30"
+              src="/earth.png"
             />
 
             <div className="relative">
-              <h2 className="text-center text-5xl font-medium tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-6xl">
+              <h2 className="text-center text-[36px] font-normal leading-[1.1] tracking-tight text-black [font-family:'Sk-Modernist-Regular',Helvetica] sm:text-[48px] lg:text-[64px]">
                 Frequently Asked Questions
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-center text-sm text-black/60 sm:text-base">
-                Checkout our Live Markets &amp; Real World Events to place
+              <p className="mx-auto mt-4 max-w-3xl text-center font-['DM_Sans'] text-[18px] font-normal leading-[1.5] text-[#444444]">
+                Checkout our Live Markets & Real World Events to place
                 predictions
               </p>
 
@@ -1217,14 +1161,14 @@ export const EarlyaccessLanding = (): JSX.Element => {
                   },
                 ].map((item) => (
                   <details
-                    className="group overflow-hidden rounded-2xl border border-[#E8EAF0] bg-white shadow-[0_18px_48px_rgba(0,0,0,0.06)]"
+                    className="group overflow-hidden rounded-[16px] border border-[#E8EAF0] bg-white transition-all hover:border-[#F3BA2F]/40"
                     key={item.q}
                   >
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-8 py-7 text-left text-base font-semibold text-black sm:px-10">
-                      <span>{item.q}</span>
-                      <ChevronDown className="h-5 w-5 flex-none text-black/45 transition-transform duration-200 group-open:rotate-180" />
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-6 px-10 py-7 text-left text-base font-medium text-black sm:px-12">
+                      <span className="font-['DM_Sans'] text-[18px]">{item.q}</span>
+                      <ChevronDown className="h-5 w-5 flex-none text-black/30 transition-transform duration-300 group-open:rotate-180" />
                     </summary>
-                    <div className="px-8 pb-7 text-sm text-black/60 sm:px-10">
+                    <div className="px-10 pb-7 font-['DM_Sans'] text-[16px] leading-relaxed text-[#444444] sm:px-12">
                       {item.a}
                     </div>
                   </details>
@@ -1235,27 +1179,16 @@ export const EarlyaccessLanding = (): JSX.Element => {
         </section>
 
         <footer className="mt-8 px-6 sm:mt-12 sm:px-12 lg:px-16">
-          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 bg-[#F9F8EE] px-6 py-12 sm:px-10 sm:py-14">
-            <div className="pointer-events-none absolute inset-0">
-              <div className="absolute inset-0 bg-gradient-to-b from-[#FFE9B4]/55 via-white/20 to-[#FFE9B4]/35" />
-            </div>
-
+          <div className="relative mx-auto w-full max-w-[1440px] overflow-hidden rounded-[22px] border border-black/5 px-6 py-12 sm:px-10 sm:py-14 lg:py-16">
             <img
               alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute left-8 top-8 w-[340px] -rotate-6 opacity-85"
-              src="/landing-v1/cloud.png"
-            />
-            <img
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none absolute right-8 top-10 w-[340px] rotate-6 opacity-85"
-              src="/landing-v1/cloud.png"
+              className="absolute inset-0 h-full w-full object-fill"
+              src="/howitworks.png"
             />
 
-            <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-              <div className="flex flex-col gap-7 sm:flex-row sm:items-start">
-                <div className="w-fit rounded-3xl border border-black/10 bg-white p-4 shadow-[0_18px_48px_rgba(0,0,0,0.10)]">
+            <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div className="flex flex-col gap-9 sm:flex-row sm:items-center lg:gap-11">
+                <div className="w-fit rounded-3xl border border-black/5 bg-white p-4 shadow-[0_18px_48px_rgba(0,0,0,0.06)]">
                   <img
                     alt="Download QR"
                     className="h-[170px] w-[170px] rounded-2xl sm:h-[190px] sm:w-[190px]"
@@ -1271,7 +1204,7 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     loading="lazy"
                     src="/content.svg"
                   />
-                  <div className="mt-3 max-w-xs text-sm text-black/60">
+                  <div className="mt-4 max-w-xs font-['DM_Sans'] text-[18px] text-[#444444]">
                     Trade Your Opinion On Real World Events
                   </div>
                 </div>
@@ -1299,18 +1232,20 @@ export const EarlyaccessLanding = (): JSX.Element => {
                     title: "Company",
                     links: [
                       { label: "Login", href: "#top" },
+                      { label: "404", href: "/404" },
+                      { label: "More Templates", href: "#" },
                     ],
                   },
                 ].map((col) => (
                   <div key={col.title}>
-                    <div className="text-sm font-semibold text-black/45">
+                    <div className="font-['DM_Sans'] text-[14px] font-semibold text-black/45">
                       {col.title}
                     </div>
-                    <div className="mt-7 space-y-6 text-[15px] text-black/70">
+                    <div className="mt-8 space-y-6 font-['DM_Sans'] text-[16px] text-black/60">
                       {col.links.map((link) => (
                         <a
                           className={`block w-fit hover:text-black ${
-                            link.underline ? "underline underline-offset-4" : ""
+                            link.underline ? "underline underline-offset-8" : ""
                           }`}
                           href={link.href}
                           key={link.label}
@@ -1324,23 +1259,23 @@ export const EarlyaccessLanding = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="relative mt-12 h-px w-full bg-black/10" />
+            <div className="relative mt-20 h-px w-full bg-black/5" />
 
             <div className="relative mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div className="text-sm text-black/55">
+              <div className="font-['DM_Sans'] text-[14px] text-black/55">
                 Copyright ©{new Date().getFullYear()}{" "}
                 <span className="text-black/70">opinex.io</span>
               </div>
 
               <div className="flex items-center gap-4">
                 {[
-                  { icon: <Facebook className="h-4 w-4" />, label: "Facebook" },
-                  { icon: <Twitter className="h-4 w-4" />, label: "Twitter" },
-                  { icon: <Instagram className="h-4 w-4" />, label: "Instagram" },
+                  { icon: <Facebook className="h-5 w-5" />, label: "Facebook" },
+                  { icon: <Twitter className="h-5 w-5" />, label: "Twitter" },
+                  { icon: <Instagram className="h-5 w-5" />, label: "Instagram" },
                 ].map((item) => (
                   <a
                     aria-label={item.label}
-                    className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white/70 text-[#E8B100] shadow-[0_14px_34px_rgba(0,0,0,0.08)] hover:bg-white"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-[#F3BA2F] shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition-transform hover:scale-110 hover:bg-white"
                     href="#top"
                     key={item.label}
                   >
